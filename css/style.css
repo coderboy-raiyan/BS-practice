@@ -1,0 +1,258 @@
+/* 
+===========:: Index of CSS :: *******
+::1.0 WEB FONTS
+::2.0 GLOBAL VARIABLES define CSS
+::3.0 COMMON CSS
+::4.0 HEADER CSS
+::5.0 HOME CSS
+::6.0 COUNTER CSS
+::7.0 PROMO CSS
+::8.0 FEATURES CSS
+::9.0 APP-SCREENSHOTS CSS
+::10.0 PRICING CSS
+::11.0 CONTACT CSS
+::12.0 FOOTER CSS
+::13.0 SCROLL TOP CSS
+============================*/
+
+/* ===============================
+::1.0 web fonts
+==================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===============================
+::2.0 global variables define css
+==================================*/
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Background color */
+  --bg-white: #fff;
+  --bg-black: #000;
+  --bg-light-pink: #ff007a;
+  --bg-light-gray: #f6f9fe;
+  --bg-gradient: linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+  --bg-card-shadow: 0 0.188rem 1.25rem 0px rgba(0, 0, 0, 0.06);
+  --bg-card-shadow: 0 2rem 5rem rgb(0, 0, 0, 0.6);
+  --bg-light-gray-1: #eee;
+
+  /* Text color */
+  --primary-font: "Poppins", sans-serif;
+  --text-white: #fff;
+  --text-black: #2c2c2c;
+  --text-light-black: #444;
+  --text-light-pink: #ff007a;
+  --text-light-gray: #7e8085;
+}
+
+/* ===============================
+::3.0 common css
+==================================*/
+
+body {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-family: var(--primary-font);
+  background: var(--bg-white);
+  color: var(--text-black);
+  overflow-x: hidden;
+}
+h1 {
+  color: var(--text-white);
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+h2 {
+  color: var(--text-black);
+  font-size: 2rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-black);
+}
+section,
+.section {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+p {
+  margin-bottom: 0;
+}
+a {
+  color: var(--text-light-black);
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ol li,
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  font-size: 2rem;
+  font-weight: 500;
+  background: var(--text-light-pink);
+  line-height: 1;
+  text-align: center;
+  padding: 1.2rem 1.8rem;
+  border: 0 none;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  outline: 0 none;
+  position: relative;
+  z-index: 1;
+}
+/* scetion padding */
+.ptb_100 {
+  padding: 100px 0;
+}
+/* ===============================
+::4.0 header css
+==================================*/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  background: transparent;
+  padding-bottom: 0;
+  z-index: 999;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 1.8rem 1.2rem;
+  color: var(--text-light-gray);
+  text-transform: capitalize;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.navbar-brand img {
+  max-width: 32%;
+}
+/* On scroll stciky Navbar */
+.navbar-sticky-on .navbar-nav .navbar-link:hover,
+.navbar-sticky-on .navbar-nav .navbar-link:active {
+  color: var(--text-light-pink) !important;
+}
+.navbar .navbar-brand-sticky {
+  display: none;
+}
+.navbar-sticky-on .navbar-brand-regular {
+  display: none;
+}
+.navbar-sticky-on .navbar-brand-sticky {
+  display: inline;
+}
+.navbar-sticky {
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.navbar-sticky-transition {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.navbar-sticky-moved-up {
+  position: fixed;
+  top: 0;
+  background: var(--text-white);
+  margin-top: -6.2rem;
+}
+.navbar-sticky-on {
+  margin-top: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
+/*========================================
+::5.0 HOME CSS
+==========================================*/
+#home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82rem;
+}
+#home .home_text h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* ===================================
+Mobile devices
+====================================== */
+
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-nav {
+    text-align: center;
+    background-color: #fff;
+  }
+  .navbar {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .navbar-brand {
+    width: 79%;
+  }
+  .navbar-toggler {
+    padding-right: 0;
+  }
+  .navbar .navbar-toggler {
+    box-shadow: none;
+  }
+  #home {
+    padding-top: 12rem;
+  }
+  .home_text {
+    margin-bottom: 7rem;
+  }
+  .home-image {
+    margin-bottom: 7rem;
+  }
+}
